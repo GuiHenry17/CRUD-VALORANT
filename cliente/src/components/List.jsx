@@ -4,10 +4,19 @@ import styles from '../styles/List.module.css';
 import price from '../styles/image/price.svg';
 import ExclusiveImg from '../images/exclusive.png';
 import DeluxeImg from '../images/deluxe.png';
+import Loading from './Loading';
 import UltraImg from '../images/ultra.png';
 import PremiumImg from '../images/premium.png';
 
 export default function List({ setSkins, skinsFilter, setSkinsFilter }) {
+
+  if (skinsFilter.length === 0) {
+    return (
+        <Loading />
+    );
+}
+
+
   return (
     <>
       <div className={styles.containerSkins}>

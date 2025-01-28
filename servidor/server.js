@@ -76,6 +76,42 @@ let skins = [
         variants: ["Original, Red, Blue, Green"],
         rarity: "Premium"
     },
+    {
+        id: 9,
+        image: "https://valorantinfo.gg/wp-content/uploads/2021/10/valorant-oni-phantom-skin.png",
+        name: "Oni Phantom",
+        weapon: "Phantom",
+        price: 1775,
+        variants: ["Red", "Black", "Green", "White"],
+        rarity: "Premium"
+    },
+    {
+        id: 10,
+        image: "https://valorantinfo.gg/wp-content/uploads/2021/10/valorant-glitchpop-ii-vandal-skin.png",
+        name: "Glitchpop Vandal",
+        weapon: "Vandal",
+        price: 2175,
+        variants: ["Blue", "Red", "Gold", "Green"],
+        rarity: "Exclusive"
+    },
+    {
+        id: 11,
+        image: "https://valorantinfo.gg/wp-content/uploads/2021/10/valorant-elderflame-operator-skin.png",
+        name: "Elderflame Operator",
+        weapon: "Operator",
+        price: 2475,
+        variants: ["Original", "Red", "Blue", "Dark"],
+        rarity: "Ultra"
+    },
+    {
+        id: 12,
+        image: "https://valorantinfo.gg/wp-content/uploads/2021/09/valorant-blastx-phantom-skin.png",
+        name: "BlastX Phantom",
+        weapon: "Phantom",
+        price: 2175,
+        variants: ["Green", "Black", "Blue", "Purple"],
+        rarity: "Exclusive"
+    }
 ];
 
 app.use(cors());

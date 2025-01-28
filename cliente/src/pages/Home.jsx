@@ -2,7 +2,9 @@ import { useState, useEffect } from 'react';
 import searchSkins from '../utils/searchSkins.jsx';
 import List from '../components/List.jsx'
 import Register from '../components/Register.jsx';
+import GeneratePDF from '../components/GeneratePDF.jsx';
 import Fonts from '../components/Fonts.jsx';
+import Loading from '../components/Loading.jsx';
 import Filters from '../components/Filters.jsx'
 import styles from '../styles/Home.module.css';
 import navbar from "../styles/image/navbar.svg";
@@ -13,7 +15,7 @@ export default function Home() {
 
   useEffect(() => {
     searchSkins(setSkins, setSkinsFilter);
-  }, []);
+  }, []); 
 
   return (
     <>
@@ -31,6 +33,9 @@ export default function Home() {
       <main>
         <div>
           <List setSkins={setSkins} skinsFilter={skinsFilter} setSkinsFilter={setSkinsFilter} />
+        </div>
+        <div>
+          <GeneratePDF skins={skins} />
         </div>
         <div>
           <Register setSkins={setSkins} />
