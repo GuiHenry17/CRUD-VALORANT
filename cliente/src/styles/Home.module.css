@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    scrollbar-width: medium;
+    scrollbar-color: #D73947 #121B24;
+}
+
+body {
+    background: linear-gradient(180deg, #074461 0%, #121B24 20%);
+}
+
+h2 {
+    text-align: center;
+    color: #ffff;
+    font-family: 'Koulen', sans-serif;
+    font-weight: 300;
+   
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerHeader {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    flex-direction: row;
+
+}
+
+.trapeze, .invertedTrapeze, .reverseInvertedTrapeze {
+    width: 250px;
+    height: 40px;
+    padding: 0;
+    margin-bottom: 5%;
+}
+
+.trapeze {
+    background-color: #D73947;
+    clip-path: polygon(10% 100%, 90% 100%, 100% 0, 0 0);
+    margin: 0;
+}
+  
+.invertedTrapeze {
+    background-color: #072436;
+    clip-path: polygon(10% 100%, 100% 100%, 90% 0, 0 0);
+    margin-right: -25px;
+}
+
+.reverseInvertedTrapeze {
+    background-color: #072436;
+    clip-path: polygon(0 100%, 90% 100%, 100% 0, 10% 0);
+    margin-left: -25px;
+
+}
+
+.containerSearch {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+.inputSearch {
+    border: none;
+    border-bottom: #1BE6AE solid 3px;
+    outline: none;
+    width: 100%;
+    font-size: 13px;
+    background-color: transparent;
+    padding-left: 4%;
+    color: #ffffff;
+    margin-bottom: 10px;
+    height: 20px;
+}
+
+.labelSearch {
+    font-family: 'Inter', sans-serif;
+    color: #1BE6AE;
+    position: absolute;
+    font-size: 13px;
+    transition: opacity 0.3s ease;
+    margin-left: 11%;
+    top: -3px;
+}
+
+.searchImage {
+    margin-left: 4%;
+    position: absolute;
+    width: 13px;
+    top: -3px;
+}
+
+.inputSearch:focus ~ .searchImage,
+.inputSearch:focus ~ .labelSearch {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.containerButtonFilters {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonFilters {
+    border: none;
+    background-color: transparent;
+    margin:2%;
+    margin-bottom: 40px;
+    font-size: 13px;
+    color: #90A9B0;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.buttonFilters:hover {
+    text-decoration: underline;
+    color: #1BE6AE;
+    transition: 0.3s;
+}
+
+#buttonPriceReverse {
+    width: 152px;
+}
+
+.bigImage {
+    width: 100%;
+}  

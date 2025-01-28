@@ -1,0 +1,127 @@
+.containerSkins {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -20%;
+  margin-bottom: 5%;
+  height: max-content;
+}
+
+.containerSkinIndividual {
+  width: 20%;
+  aspect-ratio: 590 / 310;
+  perspective: 1000px;
+  position: relative;
+  margin: 1%;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: #ffffff;
+  margin-bottom: 3%;
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.containerSkinIndividual:hover .card {
+  transform: rotateY(180deg);
+}
+
+.cardFront, .cardBack {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.cardFront {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardBack {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  transform: rotateY(180deg);
+}
+
+.cardImage, .containerPrice, .nameSkins {
+  display: flex;
+  margin: 3% 0;
+  width: 90%;
+}
+
+.cardImage {
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-height: 42%;
+}
+
+.containerPrice {
+  margin-right: 15%;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.priceImage {
+  margin-right: 2%;
+}
+
+.nameSkins {
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.buttonDelete, .buttonAlter {
+  color: #ffffff;
+  cursor: pointer;
+  width: 50%;
+  height: 20%;
+  border: none;
+  transition: 0.5s;
+}
+
+.buttonDelete {
+  background-color: #D73947;
+}
+
+.buttonAlter {
+  background-color: #121B24;
+  margin-bottom: 5%;
+}
+
+.buttonDelete:hover {
+  background-color: #99252f;
+  transition: 0.5s;
+}
+
+.buttonAlter:hover {
+  background-color: #0a0f13;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 1600px) {
+  .cardImage {
+    width: 80%;
+  }
+}
