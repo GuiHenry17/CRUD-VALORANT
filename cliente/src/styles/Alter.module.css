@@ -43,3 +43,23 @@
     border: #121b24 solid 4px;
     transition: 0.5s;
 }
+
+@media screen and (max-width: 768px) {
+    .formAlter {
+      width: 90%;
+      margin: auto;
+    }
+  
+    .inputForm {
+      width: 90%;
+      margin: 10px auto;
+      font-size: 14px;
+    }
+  
+    .bigButtonAlter {
+      width: 90%;
+      height: 50px;
+      font-size: 22px;
+    }
+  }
+  

@@ -7,7 +7,7 @@
 }
 
 body {
-    background: linear-gradient(180deg, #074461 0%, #121B24 20%);
+    background: linear-gradient(180deg, #074461 0%, #121B24 15%);
 }
 
 h2 {
@@ -176,3 +176,103 @@ header {
     left: 50%; 
     transform: translate(-50%, -50%);
 }
+
+@media screen and (max-width: 1024px) {
+    body {
+      font-size: 14px;
+    }
+  
+    h2 {
+      font-size: 18px;
+    }
+  
+    .containerButtonFilters {
+      flex-wrap: wrap;
+    }
+  
+    .buttonFilters {
+      font-size: 12px;
+      padding: 6px;
+      margin: 5px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 30px;
+    }
+  
+    h2 {
+      font-size: 16px;
+    }
+  
+    .trapeze, .invertedTrapeze, .reverseInvertedTrapeze {
+      height: 25px;
+    }
+  
+    .containerButtonFilters {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .buttonFilters {
+      font-size: 12px;
+      padding: 5px;
+    }
+  
+    .containerSearch {
+      flex-direction: row;
+      align-items: center;
+      width: 90%;
+    }
+  
+    .inputSearch {
+      width: 100%;
+    }
+  
+    .searchImage {
+      width: 10px;
+    }
+  
+    .containerButtonFilters {
+      flex-direction: row;
+    }
+  
+    .buttonFilters {
+      width: 90%;
+      text-align: center;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .containerHeader {
+      text-align: center;
+    }
+  
+    .containerSearch {
+      width: 100%;
+      flex-direction: row;
+      padding: 5px;
+    }
+
+    .searchImage{
+        margin-top: 1%;
+    }
+  
+    .inputSearch {
+      width: 90%;
+      font-size: 12px;
+      padding: 5px;
+    }
+  
+    .containerButtonFilters {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .buttonFilters {
+      width: 90%;
+      text-align: center;
+    }
+  }
+  

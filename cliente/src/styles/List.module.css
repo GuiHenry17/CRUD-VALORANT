@@ -120,8 +120,34 @@
   transition: 0.5s;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1024px) {
+  .containerSkins {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .containerSkinIndividual {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .containerSkinIndividual {
+    width: 70%;
+    margin: 10px 0;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .cardImage {
     width: 80%;
+  }
+
+  .containerPrice {
+    justify-content: center;
   }
 }
